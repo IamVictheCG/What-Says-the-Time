@@ -1,0 +1,117 @@
+let hi = "hi"
+
+function set() {
+    const secondHand = document.getElementById('secondH')
+    const minuteHand = document.querySelector("#minuteH")
+    const hourHand = document.querySelector("#hourH")
+
+    const now = new Date()
+    const seconds = now.getSeconds()
+    let degSeconds = ((seconds/60) * 360);
+    // if (seconds === 0) {
+    //     secondHand.style.cssText= `transform: rotate(90deg)`
+    //     degSeconds = 90;
+    //     // secondHand.style.cssText= `transition: all 0s`
+        
+    // }
+    secondHand.style.cssText= `transform: rotate(${degSeconds}deg)`
+
+    const minutes = now.getMinutes()
+    const degMinutes = ((minutes/60) * 360);
+    minuteHand.style.cssText= `transform: rotate(${degMinutes}deg)`
+
+    const hours = now.getHours()
+    const degHours = ((hours/12) * 360);
+    hourHand.style.cssText= `transform: rotate(${degHours}deg)`
+
+    // console.log(seconds)
+    // console.log(degSeconds)
+    function digital() {
+        let hr = document.getElementById("hr")
+        let min = document.getElementById("min")
+        let sec = document.getElementById("sec")
+    
+        const now = new Date()
+        let hour= now.getHours()
+        let minute = now.getMinutes()
+        let second = now.getSeconds()
+        
+        // console.log(second)
+        
+        // let secPara = document.createElement("P")
+        // let secState = document.createTextNode(second)
+        // secPara.appendChild(secState)
+        sec.innerHTML= `<p>${second}</p>`
+        min.innerHTML= `<p>${minute}:</p>`
+        hr.innerHTML= `<p>${hour}:</p>`
+        
+    }
+    digital()
+}
+
+setInterval(set, 1000)
+
+var dots = document.querySelectorAll(".dots")
+// console.log(dots)
+let dotRotate = 0
+
+function dotss() {
+    for (let i = 0; i < dots.length; i++) {
+        // dots[i].innerHTML = "<p></p>"
+        if (i !== 0 && i !== 15 && i !== 30 && i !== 45) {
+            // dots[i].innerHTML = "<p></p>"
+            let dotPara = document.createElement('P')
+            let dotText = document.createTextNode('')
+            dotPara.appendChild(dotText)
+            dots[i].appendChild(dotPara)
+            dotPara.classList.add("dotsPara")
+        }
+        // console.log(dotVal)
+        // console.log(dots[i])
+        // console.log(dotarr)
+        
+        if (i > 0) {
+            dotRotate += 6
+            dots[i].style.cssText = `transform: rotate(${dotRotate}deg)`
+            // console.log(dotRotate)
+            // dots[i].s
+        }
+        else if (i == 0) {
+            let dotRotate = 0
+            dots[i].style.cssText = `transform: rotate(${dotRotate}deg)`
+            let dotPara = document.createElement('P')
+            let dotText = document.createTextNode('12')
+            dotPara.appendChild(dotText)
+            dots[i].appendChild(dotPara)
+            dotPara.classList.add("dotPara")
+        }
+        else if (i == 15) {
+            let dotRotate = 190
+            dots[i].style.cssText = `transform: rotate(${dotRotate}deg)`
+            let dotPara1 = document.createElement('P')
+            let dotText1 = document.createTextNode('3')
+            dotPara1.appendChild(dotText1)
+            dots[i].appendChild(dotPara1)
+            dotPara1.classList.add("dotPara")
+        }
+        // else if (i == 30) {
+        //     let dotRotate = 0
+        //     dots[i].style.cssText = `transform: rotate(${dotRotate}deg)`
+        //     let dotPara = document.createElement('P')
+        //     let dotText = document.createTextNode('12')
+        //     dotPara.appendChild(dotText)
+        //     dots[i].appendChild(dotPara)
+        //     dotPara.classList.add("dotPara")
+        // }
+        // else if (i == 45) {
+        //     let dotRotate = 0
+        //     dots[i].style.cssText = `transform: rotate(${dotRotate}deg)`
+        //     let dotPara = document.createElement('P')
+        //     let dotText = document.createTextNode('12')
+        //     dotPara.appendChild(dotText)
+        //     dots[i].appendChild(dotPara)
+        //     dotPara.classList.add("dotPara")
+        // }
+    }
+}
+dotss()
