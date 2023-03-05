@@ -5,8 +5,12 @@ body {
 }
 
 .clock {
+  border: 2px solid pink;
   position: relative;
-  height: 100vh;
+  top: 20px;
+  left: 400px;
+  height: 560px;
+  width: 560px;
 }
 .clock .clockFace {
   margin: 0;
@@ -16,8 +20,8 @@ body {
   width: 500px;
   height: 500px;
   position: relative;
-  top: 10%;
-  left: 30%;
+  top: 5%;
+  left: 5%;
 }
 .clock .clockFace .turningFace {
   margin: 0;
