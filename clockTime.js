@@ -45,6 +45,16 @@ function set() {
         min.innerHTML= `<p>${minute}:</p>`
         hr.innerHTML= `<p>${hour}:</p>`
         
+        if (second < 10 ) {
+            sec.innerHTML= `<p>0${second}</p>`
+        }
+        else if (minute < 10) {
+            min.innerHTML= `<p>0${minute}:</p>`
+        }
+        else if (hour < 10) {
+            hr.innerHTML= `<p>0${hour}:</p>`   
+        }
+        
     }
     digital()
 }
