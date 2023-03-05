@@ -21,10 +21,15 @@ body {
 .clock .clockFace .turningFace {
   margin: 0;
   border-radius: 50%;
-  width: 500px;
-  height: 500px;
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  top: 7%;
+  left: 7%;
   background-image: linear-gradient(to right, black, red);
   background-size: cover;
+  -webkit-animation-name: clockRotate;
+          animation-name: clockRotate;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-delay: 0s;
