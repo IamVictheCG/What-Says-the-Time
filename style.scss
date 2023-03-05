@@ -339,10 +339,29 @@ body {
             top: 6%;
             left: 49.6%;
             z-index: 2;
-            transform-origin: center bottom;
+            transform-origin: 20% 89%;
             transform: rotate(0deg);
             transition: all 0.05s;
             transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
         }
+
+        #hourH{
+            background-color: rgb(76, 236, 13);
+            width: 12px;
+            height: 160px;
+            top: 18%;
+            left: 49%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 7px;
+            // transform: rotate(0deg);
+        }
+        // #minuteH{
+        //     background-color: rgb(236, 217, 13);
+        //     // transform: rotate(0deg);
+        // }
+        // #secondH {
+        //     background-color: rgb(255, 255, 255);
+        //     // transform: rotate(0deg);
+        // }
     }
 }

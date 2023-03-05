@@ -34,6 +34,7 @@ function set() {
         const now = new Date()
         let hour= now.getHours()
         let minute = now.getMinutes()
+       
         let second = now.getSeconds()
         
         // console.log(second)
