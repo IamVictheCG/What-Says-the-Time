@@ -296,4 +296,16 @@ body {
     background-color: rgb(16, 229, 176);
     z-index: 311;
   }
+  .clock .hand {
+    width: 6PX;
+    height: 220px;
+    position: absolute;
+    top: 6%;
+    left: 49.6%;
+    z-index: 2;
+    transform-origin: center bottom;
+    transform: rotate(0deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
 }/*# sourceMappingURL=style.css.map */
