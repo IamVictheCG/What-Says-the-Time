@@ -26,11 +26,11 @@ body {
 .clock .clockFace .turningFace {
   margin: 0;
   border-radius: 50%;
-  width: 420px;
-  height: 420px;
+  width: 77%;
+  height: 77%;
   position: absolute;
-  top: 7%;
-  left: 7%;
+  top: 11%;
+  left: 11%;
   background-image: linear-gradient(to right, black, red);
   background-size: cover;
   -webkit-animation-name: clockRotate;
@@ -92,8 +92,8 @@ body {
   border: 1px solid rgb(55, 6, 6);
   border-radius: 10px;
   position: absolute;
-  bottom: 70px;
-  left: 170px;
+  bottom: 18%;
+  left: 33%;
   display: flex;
   justify-content: space-evenly;
   z-index: 2;
