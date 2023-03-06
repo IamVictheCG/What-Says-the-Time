@@ -1,249 +1,250 @@
-html {
-    box-sizing: border-box;
-}
-* {
-    box-sizing: border-box;
-}
+// html {
+//     box-sizing: border-box;
+// }
+// * {
+//     box-sizing: border-box;
+// }
 
-body {
-    background-image: linear-gradient(red, black);
-    background-attachment: fixed;
-    height: fit-content;
-    width: fit-content;
-    position: relative;
-    top: 4vh;
-    left: 30%;
-    margin: 0;
-    // overflow: hidden;
-    border: 2px solid pink;
-}
+// body {
+//     background-image: linear-gradient(red, black);
+//     background-attachment: fixed;
+//     height: fit-content;
+//     width: fit-content;
+//     position: relative;
+//     top: 4vh;
+//     left: 30%;
+//     margin: 0;
+//     // overflow: hidden;
+//     border: 2px solid pink;
+// }
 
-.clock {
-    border: 2px solid pink;
-    // position: relative;
-    height: 560px;
-    width: 560px;
+// .clock {
+//     border: 2px solid pink;
+//     // position: relative;
+//     height: 560px;
+//     width: 560px;
 
 
-    .clockFace {
-        margin: 0;
-        padding: 0;
-        border: 4px solid white;
-        border-radius: 50%;
-        width: 95%;
-        height: 95%;
-        position: relative;
-        top: 2%;
-        left: 2%;
-        // background-image: linear-gradient(to right, black, red);
-        // transform: translateY(-7px);
+//     .clockFace {
+//         margin: 0;
+//         padding: 0;
+//         border: 4px solid white;
+//         border-radius: 50%;
+//         width: 95%;
+//         height: 95%;
+//         position: relative;
+//         top: 2%;
+//         left: 2%;
+//         // background-image: linear-gradient(to right, black, red);
+//         // transform: translateY(-7px);
 
-        .turningFace {
-            // display: none;
-            // border: 4px solid rgb(13, 227, 45);
-            margin: 0;
-            border-radius: 50%;
-            width: 85%;
-            height: 85%;
-            position: absolute;
-            top: 7%;
-            left: 7%;
-            background-image: linear-gradient(to right, black, red);
-            background-size: cover;
-            animation-name: clockRotate;
-            animation-duration: 5s;
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
-            animation-fill-mode: both;
-            animation-timing-function: linear;
-            z-index: 1;
-            // transform: translateY(-7px);
-        }
+//         .turningFace {
+//             // display: none;
+//             // border: 4px solid rgb(13, 227, 45);
+//             margin: 0;
+//             border-radius: 50%;
+//             width: 85%;
+//             height: 85%;
+//             position: absolute;
+//             top: 7%;
+//             left: 7%;
+//             background-image: linear-gradient(to right, black, red);
+//             background-size: cover;
+//             animation-name: clockRotate;
+//             animation-duration: 5s;
+//             animation-delay: 0s;
+//             animation-iteration-count: infinite;
+//             animation-fill-mode: both;
+//             animation-timing-function: linear;
+//             z-index: 1;
+//             // transform: translateY(-7px);
+//         }
 
-        .centerDot {
-            position: absolute;
-            top: 45%;
-            left: 47%;
-            width: 7%;
-            height: 7%;
-            border-radius: 50%;
-            background-color: aqua;
-            // opacity: 0.4;
-            z-index: 3;
+//         .centerDot {
+//             position: absolute;
+//             top: 45%;
+//             left: 47%;
+//             width: 7%;
+//             height: 7%;
+//             border-radius: 50%;
+//             background-color: aqua;
+//             // opacity: 0.4;
+//             z-index: 3;
 
-            .innerDot {
-                display: none;
-                width: 50%;
-                height: 10%;
-                // border-radius: 50%;
-                background-color: rebeccapurple;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                z-index: 444;
-            }
-        }
+//             .innerDot {
+//                 display: none;
+//                 width: 50%;
+//                 height: 10%;
+//                 // border-radius: 50%;
+//                 background-color: rebeccapurple;
+//                 position: absolute;
+//                 left: 50%;
+//                 top: 50%;
+//                 z-index: 444;
+//             }
+//         }
 
-        .hand {
-            // display: none;
-            width: 6PX;
-            height: 220px;
-            // background-color: aqua;
-            z-index: 3;
-            transform: rotate(0deg);
-            transition: all 0.05s;
-            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-        }
+//         .hand {
+//             // display: none;
+//             width: 6PX;
+//             height: 220px;
+//             // background-color: aqua;
+//             z-index: 3;
+//             transform: rotate(0deg);
+//             transition: all 0.05s;
+//             transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+//         }
         
-        #hourH{
-            transform-origin: 47% 90%;
-            background-color: rgb(76, 236, 13);
-            width: 12px;
-            height: 160px;
-            position: absolute;
-            top: 20.9%;
-            left: 49.28%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 7px;
-            // transform: rotate(0deg);
-        }
-        #minuteH{
-            // display: none;
-            transform-origin: 47% 92.7%;
-            background-color: rgb(236, 217, 13);
-            // transform: rotate(0deg);
-            position: absolute;
-            top: 9.4%;
-            left: 50%;
-        }
-        #secondH {
-            // display: none;
-            transform-origin: 47% 92.7%;
-            position: absolute;
-            top: 9.4%;
-            left: 50%;
-            background-color: rgb(255, 255, 255);
-            // transform: rotate(0deg);
-        }
+//         #hourH{
+//             transform-origin: 47% 90%;
+//             background-color: rgb(76, 236, 13);
+//             width: 12px;
+//             height: 160px;
+//             position: absolute;
+//             top: 20.9%;
+//             left: 49.28%;
+//             border-top-left-radius: 10px;
+//             border-top-right-radius: 7px;
+//             // transform: rotate(0deg);
+//         }
+//         #minuteH{
+//             // display: none;
+//             transform-origin: 47% 92.7%;
+//             background-color: rgb(236, 217, 13);
+//             // transform: rotate(0deg);
+//             position: absolute;
+//             top: 9.4%;
+//             left: 50%;
+//         }
+//         #secondH {
+//             // display: none;
+//             transform-origin: 47% 92.7%;
+//             position: absolute;
+//             top: 9.4%;
+//             left: 50%;
+//             background-color: rgb(255, 255, 255);
+//             // transform: rotate(0deg);
+//         }
 
-        .digitalClock {
-            background-color: rgb(55, 6, 6);
-            // color: green;
-            width: 160px;
-            height: 60px;
-            border: 1px solid rgb(55, 6, 6);
-            border-radius: 10px;
-            position: absolute;
-            bottom: 18%;
-            left: 33%;
-            display: flex;
-            justify-content: space-evenly;
-            z-index: 2;
+//         .digitalClock {
+//             background-color: rgb(55, 6, 6);
+//             // color: green;
+//             width: 160px;
+//             height: 60px;
+//             border: 1px solid rgb(55, 6, 6);
+//             border-radius: 10px;
+//             position: absolute;
+//             bottom: 18%;
+//             left: 33%;
+//             display: flex;
+//             justify-content: space-evenly;
+//             z-index: 2;
 
-            .digit {
-                // border: 1px solid green;
-                width: 51px;
-                height: 40px;
-                margin-top: 9px;
-                color: rgb(0, 255, 0);
-            }
+//             .digit {
+//                 // border: 1px solid green;
+//                 width: 51px;
+//                 height: 40px;
+//                 margin-top: 9px;
+//                 color: rgb(0, 255, 0);
+//             }
 
-            #sec {
-                display: flex;
-                justify-content: center !important;
+//             #sec {
+//                 display: flex;
+//                 justify-content: center !important;
 
-                p {
-                    margin-top: 10%;
-                    font-weight: bold;
-                    font-size: 30px;
-                    letter-spacing: 3px;
-                }
-            }
+//                 p {
+//                     margin-top: 10%;
+//                     font-weight: bold;
+//                     font-size: 30px;
+//                     letter-spacing: 3px;
+//                 }
+//             }
             
-            #min {
-                display: flex;
-                justify-content: center !important;
+//             #min {
+//                 display: flex;
+//                 justify-content: center !important;
 
-                p {
-                    margin-top: 10%;
-                    font-weight: bold;
-                    font-size: 30px;
-                    letter-spacing: 3px;
-                }
-            }
+//                 p {
+//                     margin-top: 10%;
+//                     font-weight: bold;
+//                     font-size: 30px;
+//                     letter-spacing: 3px;
+//                 }
+//             }
             
-            #hr {
-                display: flex;
-                justify-content: center !important;
+//             #hr {
+//                 display: flex;
+//                 justify-content: center !important;
 
-                p {
-                    margin-top: 10%;
-                    font-weight: bold;
-                    font-size: 30px;
-                    letter-spacing: 3px;
-                }
-            }
+//                 p {
+//                     margin-top: 10%;
+//                     font-weight: bold;
+//                     font-size: 30px;
+//                     letter-spacing: 3px;
+//                 }
+//             }
             
-        }
+//         }
 
 
-        .dots {
-            height: 53%;
-            width: fit-content;
-            // border: 2px solid black;
-            // text-align: center;
-            display: flex;
-            align-content: flex-end;
-            transform-origin: 53% 90%;
-            // transform: rotate(30deg);
-            position: absolute;
-            top: 01.7%;
-            left: 48.32%;
+//         .dots {
+//             height: 53%;
+//             width: fit-content;
+//             // border: 2px solid black;
+//             // text-align: center;
+//             display: flex;
+//             align-content: flex-end;
+//             transform-origin: 53% 90%;
+//             // transform: rotate(30deg);
+//             position: absolute;
+//             top: 01.7%;
+//             left: 48.32%;
 
 
-            .dotsPara {
-                margin: 0px;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                background-color: white;
-                border: 2px solid white;
-                // font-size: 20px;
-                // font-weight: bolder;
-            }
+//             .dotsPara {
+//                 margin: 0px;
+//                 width: 8px;
+//                 height: 8px;
+//                 border-radius: 50%;
+//                 background-color: white;
+//                 border: 2px solid white;
+//                 // font-size: 20px;
+//                 // font-weight: bolder;
+//             }
 
-            .dotPara {
-                margin: 0px;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                background-color: transparent;
-                color: white;
-                font-size: 22px;
-                font-weight: bold;
-                position: relative;
-                right: 3px;
-                bottom: 6px;
-                // border: 2px solid none !important;
+//             .dotPara {
+//                 margin: 0px;
+//                 width: 8px;
+//                 height: 8px;
+//                 border-radius: 50%;
+//                 background-color: transparent;
+//                 color: white;
+//                 font-size: 22px;
+//                 font-weight: bold;
+//                 position: relative;
+//                 right: 3px;
+//                 bottom: 6px;
+//                 // border: 2px solid none !important;
 
-            }
+//             }
             
-        }
-    }
-}
+//         }
+//     }
+// }
 
-@keyframes clockRotate {
-    from {
-        transform: rotate(0deg);
-    }
+// @keyframes clockRotate {
+//     from {
+//         transform: rotate(0deg);
+//     }
 
-    to {
-        transform: rotate(360deg);
-    }
-}
+//     to {
+//         transform: rotate(360deg);
+//     }
+// }
 
 
-// ========================================================================================================
+// =============================================TABLET VIEW===========================================================
+
 
 @media (max-width: 840px) {
     html {
@@ -299,93 +300,6 @@ body {
     }
 }
 
-// @media (max-width: 840px) {
-//     html {
-//         box-sizing: border-box;
-//     }
-//     * {
-//         box-sizing: border-box;
-//     }
-    
-//     body {
-//         background-image: linear-gradient(red, black);
-//         background-attachment: fixed;
-//         height: fit-content;
-//         width: fit-content;
-//         position: relative;
-//         top: 3vh;
-//         left: 15%;
-//         margin: 0;
-//         // overflow: hidden;
-//         border: 2px solid pink;
-//     }
-
-//     .clock {
-//         border: 2px solid pink;
-//         // position: relative;
-//         height: 560px;
-//         width: 560px;
-    
-    
-//         .clockFace {
-//             margin: 0;
-//             padding: 0;
-//             border: 4px solid white;
-//             border-radius: 50%;
-//             width: 85%;
-//             height: 85%;
-//             position: relative;
-//             top: 7%;
-//             left: 7%;
-//         }
-
-//         .centerDot {
-//             position: absolute;
-//             top: 49.2% !important;
-//             left: 47%;
-//             width: 30px;
-//             height: 30px;
-//             border-radius: 50%;
-//             background-color: rgb(16, 229, 176);
-//             // opacity: 0.4;
-//             z-index: 311;
-//         }
-
-//         .hand {
-//             // display: none;
-//             width: 6PX;
-//             height: 300px;
-//             // background-color: aqua;
-//             position: absolute;
-//             top: 6%;
-//             left: 49.6%;
-//             z-index: 2;
-//             transform-origin: 20% 89%;
-//             transform: rotate(0deg);
-//             transition: all 0.05s;
-//             transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-//         }
-
-//         #hourH{
-//             background-color: rgb(76, 236, 13);
-//             width: 12px;
-//             height: 160px;
-//             top: 18%;
-//             left: 49%;
-//             border-top-left-radius: 10px;
-//             border-top-right-radius: 7px;
-//             // transform: rotate(0deg);
-//         }
-//         #minuteH{
-//             background-color: rgb(236, 217, 13);
-//             // transform: rotate(0deg);
-//         }
-//         #secondH {
-//             background-color: rgb(255, 255, 255);
-//             // transform: rotate(0deg);
-//         }
-//     }
-// }
 
 // @media (max-width: 600px) {
 //     html {
