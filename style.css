@@ -126,7 +126,7 @@ body {
   left: 33%;
   display: flex;
   justify-content: space-evenly;
-  z-index: 2;
+  z-index: 5;
 }
 .clock .clockFace .digitalClock .digit {
   width: 51px;
@@ -228,9 +228,7 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 400px;
     position: relative;
     top: 3vh;
     left: 15%;
