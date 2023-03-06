@@ -69,9 +69,10 @@ body {
             border-radius: 50%;
             background-color: aqua;
             // opacity: 0.4;
-            z-index: 2;
+            z-index: 3;
 
             .innerDot {
+                display: none;
                 width: 50%;
                 height: 10%;
                 // border-radius: 50%;
@@ -116,7 +117,7 @@ body {
             left: 50%;
         }
         #secondH {
-            display: none;
+            // display: none;
             transform-origin: 47% 92.7%;
             position: absolute;
             top: 9.4%;
