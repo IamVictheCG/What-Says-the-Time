@@ -401,8 +401,8 @@ body {
         height: fit-content;
         width: fit-content;
         position: relative;
-        top: 3vh;
-        left: 15%;
+        // top: 3vh;
+        // left: 15%;
         margin: 0;
         // overflow: hidden;
         border: 2px solid pink;
@@ -411,8 +411,8 @@ body {
     .clock {
         border: 2px solid pink;
         // position: relative;
-        height: 100vw;
-        width: 560px;
+        height: 58vh;
+        width: 100vw;
     
     
         .clockFace {
@@ -437,6 +437,10 @@ body {
             background-color: rgb(16, 229, 176);
             // opacity: 0.4;
             z-index: 311;
+        }
+
+        .turningFace {
+            display: none;
         }
 
         .hand {

@@ -357,15 +357,13 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     position: relative;
-    top: 3vh;
-    left: 15%;
     margin: 0;
     border: 2px solid pink;
   }
   .clock {
     border: 2px solid pink;
-    height: 100vw;
-    width: 560px;
+    height: 58vh;
+    width: 100vw;
   }
   .clock .clockFace {
     margin: 0;
@@ -387,6 +385,9 @@ body {
     border-radius: 50%;
     background-color: rgb(16, 229, 176);
     z-index: 311;
+  }
+  .clock .turningFace {
+    display: none;
   }
   .clock .hand {
     width: 6PX;
